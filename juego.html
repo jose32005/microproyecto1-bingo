@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo! | Juego</title>
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <section class="header">
+      <div>
+        <img src="./Logo Bingo.png" alt="Logo Bingo" id="logo" />
+      </div>
+    </section>
+    <div class="container">
+      <section class="num-generator">
+        <div>
+          <div id="num-container">
+            <h2>Número:</h2>
+            <table id="num-container-t">
+              <tr>
+                <th></th>
+              </tr>
+            </table>
+            <div>
+              <button onclick="generarNumero()">Generar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="player-card">
+        <div class="player-selector">
+          <select id="player-selector">
+            <option value="player-1">Player 1</option>
+            <option value="player-2">Player 2</option>
+            <option value="player-3">Player 3</option>
+            <option value="player-4">Player 4</option>
+          </select>
+        </div>
+        <div class="player-name">
+          <h2 id="playerName">Player name</h2>
+        </div>
+        <div id="numbers" class="numbers"></div>
+      </section>
+      <section class="Round-counter">
+        <h3>⏱️ Ronda: 0 / 25</h3>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

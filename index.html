@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo!</title>
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <section class="header">
+      <div>
+        <img src="./Logo Bingo.png" alt="Logo Bingo" id="logo" />
+      </div>
+    </section>
+    <section class="section-1">
+      <section id="section-1-left">
+        <div>
+          <h2>Jugadores 👥</h2>
+          <h4>Ingresa el nombre de los 4 jugadores</h4>
+        </div>
+        <form>
+          <div>
+            <div id="input-names">
+              <div>
+                <p>Jugador 1:</p>
+                <input type="text" id="name-player1" />
+              </div>
+              <div>
+                <p>Jugador 2:</p>
+                <input type="text" id="name-player2" />
+              </div>
+              <div>
+                <p>Jugador 3:</p>
+                <input type="text" id="name-player3" />
+              </div>
+              <div>
+                <p>Jugador 4:</p>
+                <input type="text" id="name-player4" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <h2>Modo de Juego 📅</h2>
+                <h4>Seleccione el tamaño del cartón para iniciar:</h4>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div id="card-size">
+          <button onclick="iniciarJuego(3)">3x3</button>
+          <button onclick="iniciarJuego(4)">4x4</button>
+          <button onclick="iniciarJuego(5)">5x5</button>
+        </div>
+      </section>
+      <section class="section-1-right">
+        <h2>Ranking ⭐</h2>
+        <table id="rank-table">
+          <tr>
+            <th>Posición 🚩</th>
+            <th>Jugador 👤</th>
+            <th>Victorias 🏆</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
